@@ -6,8 +6,10 @@ DISCRIPTION
 
 This smart contract allows users to set, increase and decrease a stored worth. It includes three functions that are stated below:
  (1) requireSet(uint _Worth): It sets the worth to the specified _Worth parameter. It uses require() to check that the worth is greater that zero.
+ 
  (2) assertIncrease(uit _amount): It increases the current worth by the specified _amount parameter. It uses assert() to check that the new worth is greater than
  the previous worth.
+ 
  (3) revertDecrease(uiint _amount): It decreases the current worth by the specified _amount parameter. It uses revert() to revert the transaction if the amount exceeds the current worth.
 
  PREREQUISITES
@@ -26,11 +28,10 @@ Once you reach the remix website, create a new file and save the file with a .so
 
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
-
 contract SContract {
     uint public Worth;
     
-    function requireSet (uint _Worth) external {
+        function requireSet (uint _Worth) external {
         // Using require() to check a condition
         require(_Worth > 0, "Worth should be more than zero");
         
