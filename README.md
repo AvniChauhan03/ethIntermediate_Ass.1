@@ -16,7 +16,9 @@ This smart contract allows users to set, increase and decrease a stored worth. I
 
  To use this smart contract, you'll need the following:
  (1) solidity compiler version 0.8.0 or higher.
+ 
  (2) Ethereum development environment(eg., Remix, Truffle, Hardhat)
+ 
  (3) Test environment(eg., Ganache)
 
 GETTING STARTED
@@ -27,7 +29,9 @@ To run this program, you can you remix, an online solidity IDE. To get started, 
 Once you reach the remix website, create a new file and save the file with a .sol extension and then copy paste the following code in the file:
 
 // SPDX-License-Identifier: MIT
+
 pragma solidity ^0.8.0;
+
 contract SContract {
     uint public Worth;
     
@@ -58,7 +62,9 @@ contract SContract {
 
 
 1. Compile the smart contract by using your preferred solidity compiler.
+  
 2. Deploy the smart contract to your chosen Ethereum development environment.
+  
 3. Interact with the contract using the provided functions( assertIncrease, requireSet, revertDecrease).
 
 ## Authors
