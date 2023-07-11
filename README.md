@@ -5,6 +5,7 @@ Here in this project we have written a smart contract that shows the implementat
 DISCRIPTION
 
 This smart contract allows users to set, increase and decrease a stored worth. It includes three functions that are stated below:
+
  (1) requireSet(uint _Worth): It sets the worth to the specified _Worth parameter. It uses require() to check that the worth is greater that zero.
  
  (2) assertIncrease(uit _amount): It increases the current worth by the specified _amount parameter. It uses assert() to check that the new worth is greater than
@@ -15,6 +16,7 @@ This smart contract allows users to set, increase and decrease a stored worth. I
  PREREQUISITES
 
  To use this smart contract, you'll need the following:
+ 
  (1) solidity compiler version 0.8.0 or higher.
  
  (2) Ethereum development environment(eg., Remix, Truffle, Hardhat)
